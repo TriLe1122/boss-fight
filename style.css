@@ -2,3 +2,16 @@
   --primary: green;
   --secondary: white;
 }
+
+.heroes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.reset-btn {
+  justify-content: space-between;
+}
+
+.reset {
+  padding-top: 7rem;
+}

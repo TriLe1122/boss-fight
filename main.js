@@ -12,7 +12,7 @@ const heros = [
     health: 50,
   },
   {
-    name: 'Halbren Ironfist',
+    name: 'Kain Vernhearth',
     race: 'Elf',
     damage: 15,
     health: 30,
@@ -29,10 +29,9 @@ const boss = {
 
 
 
-function () {
+// function () {
 
-}
-
+// }
 
 
 
@@ -57,3 +56,6 @@ Level up boss. Add logic to function that attacks the boss to determine if the b
 
 *Add 'health packs'
 */
+
+
+
