@@ -35,10 +35,11 @@
   }
 </style>
 
+
+
 <body class="debug">
 
   <header>
-
   </header>
 
 
@@ -48,13 +49,14 @@
 
     <!-- SECTION: Heroes -->
     <section class="container">
-      <div class="heroes row pt-4">
+      <div class="heroes row pt-2">
 
         <!-- NOTE: Halbren/dwarf -->
-        <div class="col-3 Halbren">
-          Halbren Ironfist
+        <div class="col-3 Halbren bg-dark text-light border">
+          <strong>Halbren Ironfist</strong>
           <img src="" alt="">
-          <p>HP: <span>100</span></p>
+
+          <p class="pt-4">HP: <span>100</span></p>
           <p>GOLD: <span>15</span></p>
           <p>LEVEL: <span>1</span></p>
         </div>
@@ -62,10 +64,11 @@
 
 
         <!-- NOTE: Dave/human -->
-        <div class="col-3 Dave">
-          Dave Hammerhand
+        <div class="col-3 Dave bg-dark text-light border">
+          <strong>Dave Hammerhand</strong>
           <img src="" alt="">
-          <p>HP: <span>50</span></p>
+
+          <p class="pt-4">HP: <span>50</span></p>
           <p>GOLD: <span>5</span></p>
           <p>LEVEL: <span>1</span></p>
         </div>
@@ -73,10 +76,13 @@
 
 
         <!-- NOTE: Kain/elf -->
-        <div class="col-3 Kain">
-          Kain Vernhearth
-          <img src="" alt="">
-          <p>HP: <span>30</span></p>
+        <div class="col-3 Kain bg-dark text-light border">
+          <div>
+            <strong>Kain Vernhearth</strong>
+            <img src="" alt="">
+          </div>
+
+          <p class="pt-4">HP: <span>30</span></p>
           <p>GOLD: <span>10</span></p>
           <p>LEVEL: <span>1</span></p>
         </div>
@@ -91,15 +97,10 @@
 
     <!-- SECTION: monster -->
     <section class="container">
-      <div class="row monster pt-4 pb-5">
-        <div class="col-8">
-          scary monster thing?
-          <p><span>100</span>/100</p>
-          <h4>monster name</h4>
-          <div class="monster-contents">
-            <img src="https://www.pngkey.com/png/detail/66-668469_blue-flame-boss-fire-enemy-pixel-art.png"
-              alt="boss monster" class="" onclick="">
-          </div>
+      <div class="row monster-container" onclick="attackBoss()">
+        <div class="monster col-8 text-light">
+          <h4><strong>MONSTER NAME</strong></h4>
+          <p>Boss HP: <span id="monsterHP">100</span>/100</p>
         </div>
       </div>
     </section>
@@ -113,8 +114,8 @@
     <section class="container">
       <div class="row">
         <div class="reset-btn d-flex">
-          <div class="col-5">
 
+          <div class="col-5 bg-dark text-light border shopItems">
             <!-- ANCHOR: Potions -->
             <div class="d-flex" onclick="">
               <h4>buy potion </h4>
@@ -145,16 +146,13 @@
 
           <!-- SECTION: reset button -->
           <div class="col-1 reset">
-            <button class="btn btn-danger ">RESET</button>
+            <button class="btn btn-danger" onclick="">RESET</button>
           </div>
 
         </div>
       </div>
     </section>
     <!-- end section -->
-
-
-
 
 
   </main>
@@ -164,12 +162,8 @@
 
 
 
-
   <footer>
-
   </footer>
-
-
 
 
 

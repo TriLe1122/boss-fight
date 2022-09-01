@@ -19,17 +19,38 @@
 .monster {
   display: flex;
   justify-content: space-around;
+
+  user-select: none;
+  cursor: pointer;
+
+  background-image: url('https://www.pngkey.com/png/detail/66-668469_blue-flame-boss-fire-enemy-pixel-art.png');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
 }
 
-.monster-contents {
-  display: flex;
-  justify-content: center;
+.monster-container {
+  height: 20rem;
+  width: 50rem;
 }
 
 /* #endregion */
 
 
+body {
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/54/492/884/pixel-art-trees-magic-noah-bradley-wallpaper-preview.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .heroes {
   display: flex;
   justify-content: space-around;
+  border-color: white;
+}
+
+.shopItems {
+  user-select: none;
+  cursor: pointer;
 }

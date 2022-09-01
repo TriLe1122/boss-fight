@@ -1,3 +1,4 @@
+// @ts-nocheck
 const heros = [
   {
     name: 'Halbren Ironfist',
@@ -19,7 +20,7 @@ const heros = [
   },
 ]
 
-const boss = {
+const monster = {
   health: 110,
   maxHealth: 110,
   damage: 5,
@@ -29,9 +30,23 @@ const boss = {
 
 
 
-// function () {
+function attackBoss() {
+  heros.forEach(hero => {
+    if (monster.health > 0) {
+      monster.health -= hero.damage
+    }
+    if (monster.health < 0) {
+      monster.health = 0
+    }
+  })
+  document.getElementById('monsterHP').innerText = monster.health
+}
 
-// }
+
+
+
+
+function monsterLevel() { }
 
 
 
@@ -39,12 +54,6 @@ const boss = {
 
 //SECTION: GOALS
 /*Will demonstrate the ability to manipulate objects in an array and maintain an updated page with all the current data values. As well as working with an interval.
-
-*Add images
-
-*Label creatures
-
-*Add click attribute to boss for attacking it. This should reduce it with the COMBINED damaged from heros. Use look or forEach function to add up the damage than reduce boss
 
 *Boss damage per second (5?). Function that loops over heros array and reduces their health by boss damage.
 - give boss variable damage?
