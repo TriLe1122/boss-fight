@@ -8,6 +8,9 @@
   justify-content: space-around;
 }
 
+.monster
+
+/* #region: btns */
 .reset-btn {
   justify-content: space-between;
 }
@@ -15,3 +18,5 @@
 .reset {
   padding-top: 7rem;
 }
+
+/* #endregion */
