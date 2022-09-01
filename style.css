@@ -3,13 +3,6 @@
   --secondary: white;
 }
 
-.heroes {
-  display: flex;
-  justify-content: space-around;
-}
-
-.monster
-
 /* #region: btns */
 .reset-btn {
   justify-content: space-between;
@@ -20,3 +13,23 @@
 }
 
 /* #endregion */
+
+
+/* #region: monster */
+.monster {
+  display: flex;
+  justify-content: space-around;
+}
+
+.monster-contents {
+  display: flex;
+  justify-content: center;
+}
+
+/* #endregion */
+
+
+.heroes {
+  display: flex;
+  justify-content: space-around;
+}
