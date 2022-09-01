@@ -1,22 +1,25 @@
 // @ts-nocheck
-const heros = [
+const heroes = [
   {
     name: 'Halbren Ironfist',
     race: 'Dwarf',
     damage: 10,
     health: 100,
+    price: 200,
   },
   {
     name: 'Dave Hammerhand',
     race: 'Human',
     damage: 5,
     health: 50,
+    price: 60,
   },
   {
     name: 'Kain Vernhearth',
     race: 'Elf',
     damage: 15,
     health: 30,
+    price: 250,
   },
 ]
 
@@ -31,7 +34,7 @@ const monster = {
 
 
 function attackBoss() {
-  heros.forEach(hero => {
+  heroes.forEach(hero => {
     if (monster.health > 0) {
       monster.health -= hero.damage
     }
