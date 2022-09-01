@@ -16,7 +16,26 @@
   <!-- #endregion -->
 </head>
 
-<body>
+
+<style>
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
+
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+<body class="debug">
 
   <header>
 
@@ -25,10 +44,108 @@
 
 
 
-
-
-
   <main>
+
+    <!-- SECTION: Heroes -->
+    <section class="container">
+      <div class="row">
+        <!-- NOTE: bob -->
+        <div class="col-3">
+          Halbren Ironfist
+          <img src="" alt="">
+          <p>HP: <span>100</span></p>
+          <p>GOLD: <span>15</span></p>
+          <p>LEVEL: <span>1</span></p>
+        </div>
+        <!-- end note -->
+
+
+        <!-- NOTE: monkey -->
+        <div class="col-3">
+          Dave Hammerhand
+          <img src="" alt="">
+          <p>HP: <span>100</span></p>
+          <p>GOLD: <span>15</span></p>
+          <p>LEVEL: <span>1</span></p>
+        </div>
+        <!-- end note -->
+
+
+        <!-- NOTE: coco -->
+        <div class="col-3">
+          Halbren Ironfist
+          <img src="" alt="">
+          <p>HP: <span>100</span></p>
+          <p>GOLD: <span>15</span></p>
+          <p>LEVEL: <span>1</span></p>
+        </div>
+        <!-- end note -->
+      </div>
+    </section>
+    <!-- end section -->
+
+
+
+    <!-- SECTION: monster -->
+    <section class="container">
+      <div class="row">
+        <div class="col-8">
+          scary monster thing?
+          <p><span>100</span>/100</p>
+          <h4>monster name</h4>
+          <img src="//thiscatdoesnotexist.com" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- end section -->
+
+
+
+    <!-- SECTION: Shop -->
+    <section class="container">
+      <div class="row">
+        <div class="col-5">
+          <div class="">
+            <!-- ANCHOR: Potions -->
+            <div class="d-flex">
+              <h4>buy potion</h4>
+              <p> 20g</p>
+            </div>
+            <!-- end anchor -->
+
+            <!-- ANCHOR: buy heroes -->
+            <div class="d-flex">
+              <h4>buy potion</h4>
+              <p> 20g</p>
+            </div>
+
+            <div class="d-flex">
+              <h4>buy potion</h4>
+              <p> 20g</p>
+            </div>
+
+            <div class="d-flex">
+              <h4>buy potion</h4>
+              <p> 20g</p>
+            </div>
+            <!-- end anchor -->
+          </div>
+        </div>
+      </div>
+      <!-- end section -->
+
+
+
+      <!-- SECTION: reset button -->
+      <div class="">
+        <button class="btn btn-danger ">Reset</button>
+      </div>
+    </section>
+    <!-- end section -->
+
+
+
+
 
   </main>
 
