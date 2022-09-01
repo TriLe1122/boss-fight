@@ -17,7 +17,7 @@
 </head>
 
 
-<style>
+<!-- <style>
   body.debug .container,
   body.debug .container-fluid {
     outline: 2px double blue;
@@ -33,7 +33,7 @@
     outline: 2px dotted forestgreen;
     outline-offset: -3px;
   }
-</style>
+</style> -->
 
 
 
@@ -58,7 +58,6 @@
 
           <p class="pt-4">HP: <span>100</span></p>
           <p>GOLD: <span>15</span></p>
-          <p>LEVEL: <span>1</span></p>
         </div>
         <!-- end note -->
 
@@ -70,7 +69,6 @@
 
           <p class="pt-4">HP: <span>50</span></p>
           <p>GOLD: <span>5</span></p>
-          <p>LEVEL: <span>1</span></p>
         </div>
         <!-- end note -->
 
@@ -84,7 +82,6 @@
 
           <p class="pt-4">HP: <span>30</span></p>
           <p>GOLD: <span>10</span></p>
-          <p>LEVEL: <span>1</span></p>
         </div>
         <!-- end note -->
       </div>
@@ -97,9 +94,10 @@
 
     <!-- SECTION: monster -->
     <section class="container">
-      <div class="row monster-container" onclick="attackBoss()">
+      <div class="row monster-container mt-5" onclick="attackBoss()">
         <div class="monster col-8 text-light">
           <h4><strong>MONSTER NAME</strong></h4>
+          <p>Boss Level: <span id="monsterLevel">1</span></p>
           <p>Boss HP: <span id="monsterHP">100</span>/100</p>
         </div>
       </div>
@@ -141,7 +139,6 @@
           </div>
           <!-- end anchor -->
           <!-- end section -->
-
 
 
           <!-- SECTION: reset button -->
