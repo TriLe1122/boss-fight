@@ -4,21 +4,21 @@ const heroes = [
   {
     name: 'Halbren Ironfist',
     race: 'Dwarf',
-    damage: 5,
+    damage: 10,
     health: 100,
     price: 200,
   },
   {
     name: 'Dave Hammerhand',
     race: 'Human',
-    damage: 2,
+    damage: 5,
     health: 50,
     price: 60,
   },
   {
     name: 'Kain Vernhearth',
     race: 'Elf',
-    damage: 5,
+    damage: 15,
     health: 30,
     price: 250,
   },
@@ -44,7 +44,7 @@ function attackBoss() {
     }
   })
   document.getElementById('monsterHP').innerText = monster.health
-  monsterLevelUp()
+  update()
 }
 
 
@@ -92,7 +92,6 @@ function heroHealthTaken() {
 }
 
 
-
 function monsterLevelUp() {
 
   if (monster.health <= 0) {
@@ -102,9 +101,9 @@ function monsterLevelUp() {
     monster.health = monster.level * 100
 
 
+    update()
   }
 
-  update()
 }
 
 
@@ -112,14 +111,9 @@ function update() {
   let monsterHP = document.getElementById('monsterHP').innerText = monster.health
   document.getElementById('monsterLevel').innerText = monster.level
 }
-// NOTE cant get heal on click to heal................................
-// function heroHeal() {
-//   let heal = healing.find(heroes => hero.health == health)
 
-//   document.getElementById('elf-hp').innerText = heroes.health
-//   heroes.health++
-//   console.log("heal work?");
-// }
+
+
 
 
 //SECTION: GOALS
