@@ -37,6 +37,17 @@
 /* #endregion */
 
 
+/* #region: Heroes */
+.heroes {
+  display: flex;
+  justify-content: space-around;
+  border-color: white;
+}
+
+/* #endregion */
+
+
+
 body {
   background-image: url('https://c4.wallpaperflare.com/wallpaper/54/492/884/pixel-art-trees-magic-noah-bradley-wallpaper-preview.jpg');
   background-repeat: no-repeat;
@@ -44,11 +55,6 @@ body {
   background-attachment: fixed;
 }
 
-.heroes {
-  display: flex;
-  justify-content: space-around;
-  border-color: white;
-}
 
 .shopItems {
   user-select: none;
