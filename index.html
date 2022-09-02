@@ -23,12 +23,10 @@
     outline: 2px double blue;
     outline-offset: -2px;
   }
-
   body.debug .row {
     outline: 2px dashed red;
     outline-offset: -2px;
   }
-
   body.debug [class*="col-"] {
     outline: 2px dotted forestgreen;
     outline-offset: -3px;
@@ -56,7 +54,7 @@
           <strong>Halbren Ironfist</strong>
           <img src="" alt="">
 
-          <p class="pt-4">HP: <span>100</span></p>
+          <p class="pt-4">HP: <span id="dwarfHP">100</span></p>
           <p>GOLD: <span>15</span></p>
         </div>
         <!-- end note -->
@@ -67,7 +65,7 @@
           <strong>Dave Hammerhand</strong>
           <img src="" alt="">
 
-          <p class="pt-4">HP: <span>50</span></p>
+          <p class="pt-4">HP: <span id="humanHP">50</span></p>
           <p>GOLD: <span>5</span></p>
         </div>
         <!-- end note -->
@@ -77,11 +75,12 @@
         <div class="col-3 Kain bg-dark text-light border">
           <div>
             <strong>Kain Vernhearth</strong>
+            <button class="btn btn-success" onclick="heroHeal()">HEAL</button>
             <img src="" alt="">
           </div>
 
-          <p class="pt-4">HP: <span>30</span></p>
-          <p>GOLD: <span>10</span></p>
+          <p class="pt-4">HP: <span id="elfHP">30</span></p>
+          <p>GOLD: <span id="herogold">10</span></p>
         </div>
         <!-- end note -->
       </div>
@@ -98,7 +97,7 @@
         <div class="monster col-8 text-light">
           <h4><strong>MONSTER NAME</strong></h4>
           <p>Boss Level: <span id="monsterLevel">1</span></p>
-          <p>Boss HP: <span id="monsterHP">100</span>/100</p>
+          <p>Boss HP: <span id="monsterHP">100/100</span></p>
         </div>
       </div>
     </section>
