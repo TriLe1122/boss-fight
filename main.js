@@ -127,4 +127,4 @@ Level up boss. Add logic to function that attacks the boss to determine if the b
 
 
 
-// setInterval(heroHealthTaken, 1000)
+setInterval(heroHealthTaken, 1000)
