@@ -99,10 +99,10 @@ function heroHealthTaken() {
 //SECTION: GOALS
 /*Will demonstrate the ability to manipulate objects in an array and maintain an updated page with all the current data values. As well as working with an interval.
 
-- give boss variable damage?
+- give boss variable damage? (optional)
 
 Level up boss. Add logic to function that attacks the boss to determine if the boss is dead than increment level (increase max health and reset health to max) then re-draw boss after level up.
-- add alerts or indications that show how many monsters have been defeated/what level boss is on.
+- add alerts or indications that show how many monsters have been defeated/what level boss is on. (optional)
 
 *Give gold for killing boss that increases each level. Needs to be a global variable to hold the gold the hero has won, which can be displayed to the dom then.
 
