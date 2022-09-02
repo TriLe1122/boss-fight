@@ -1,4 +1,5 @@
 // @ts-nocheck
+
 const heroes = [
   {
     name: 'Halbren Ironfist',
@@ -33,6 +34,7 @@ const monster = {
 
 
 function attackBoss() {
+  console.log('attack boss')
   heroes.forEach(hero => {
     if (monster.health > 0) {
       monster.health -= hero.damage
@@ -46,36 +48,49 @@ function attackBoss() {
 
 
 
-function heroHealthTaken(health) {
+function heroHealthTaken() {
+  //NOTE: need to define what dead is and apply it to both the heroes and the monster so it stops logging attacks after death.
+  //NOTE: also need to figure out how to shorten this block of code later.
+
+
   const dwarf = heroes.find(a => a.name == 'Halbren Ironfist')
+  console.log('dwarf');
   if (dwarf.health > 0) {
     dwarf.health -= monster.damage
+  }
+  if (dwarf.health < 0) {
+    dwarf.health = 0
   }
   document.getElementById('dwarfHP').innerHTML = dwarf.health
 
 
 
+
   const human = heroes.find(a => a.name == 'Dave Hammerhand')
+  console.log('human');
   if (human.health > 0) {
     human.health -= monster.damage
+  }
+  if (dwarf.health < 0) {
+    dwarf.health = 0
   }
   document.getElementById('humanHP').innerHTML = human.health
 
 
 
+
   const elf = heroes.find(a => a.name == 'Kain Vernhearth')
+  console.log('elf');
   if (elf.health > 0) {
     elf.health -= monster.damage
+  }
+  if (dwarf.health < 0) {
+    dwarf.health = 0
   }
   document.getElementById('elfHP').innerHTML = elf.health
 }
 
 
-
-
-
-
-function monsterLevel() { }
 
 
 
@@ -96,4 +111,4 @@ Level up boss. Add logic to function that attacks the boss to determine if the b
 
 
 
-setInterval(heroHealthTaken, 5000)
+setInterval(heroHealthTaken, 1000)

@@ -61,3 +61,7 @@ body {
   cursor: pointer;
   padding-left: 1rem;
 }
+
+.dead {
+  background-color: white;
+}
