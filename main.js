@@ -32,7 +32,6 @@ const monster = {
 
 
 
-
 function attackBoss() {
   heroes.forEach(hero => {
     if (monster.health > 0) {
@@ -47,6 +46,33 @@ function attackBoss() {
 
 
 
+function heroHealthTaken(health) {
+  const dwarf = heroes.find(a => a.name == 'Halbren Ironfist')
+  if (dwarf.health > 0) {
+    dwarf.health -= monster.damage
+  }
+  document.getElementById('dwarfHP').innerHTML = dwarf.health
+
+
+
+  const human = heroes.find(a => a.name == 'Dave Hammerhand')
+  if (human.health > 0) {
+    human.health -= monster.damage
+  }
+  document.getElementById('humanHP').innerHTML = human.health
+
+
+
+  const elf = heroes.find(a => a.name == 'Kain Vernhearth')
+  if (elf.health > 0) {
+    elf.health -= monster.damage
+  }
+  document.getElementById('elfHP').innerHTML = elf.health
+}
+
+
+
+
 
 
 function monsterLevel() { }
@@ -58,7 +84,6 @@ function monsterLevel() { }
 //SECTION: GOALS
 /*Will demonstrate the ability to manipulate objects in an array and maintain an updated page with all the current data values. As well as working with an interval.
 
-*Boss damage per second (5?). Function that loops over heros array and reduces their health by boss damage.
 - give boss variable damage?
 
 Level up boss. Add logic to function that attacks the boss to determine if the boss is dead than increment level (increase max health and reset health to max) then re-draw boss after level up.
@@ -71,3 +96,4 @@ Level up boss. Add logic to function that attacks the boss to determine if the b
 
 
 
+setInterval(heroHealthTaken, 5000)
